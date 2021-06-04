@@ -1,2 +1,2 @@
-project_id = "foo"
-project_number = "bar"
+project_id_test = "foo"
+project_number_test = "bar"
