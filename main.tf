@@ -1,3 +1,4 @@
 output "hello_world" {
-  value = "Hello World!"
+  value = var.project_id
 }
+
