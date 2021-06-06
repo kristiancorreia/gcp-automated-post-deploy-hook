@@ -1,6 +1,4 @@
-/bin/bash
-
-set -eo pipefail
+RUN /bin/sh -c
 
 go mod init terraunittest \
 && go mod tidy \
