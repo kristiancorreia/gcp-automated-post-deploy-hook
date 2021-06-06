@@ -4,7 +4,7 @@ steps:
   entrypoint: 'ash'
   args:
   - '-c'
-  - '-eEuo'
+  - '-eo'
   - 'pipefail'
   - |
     go mod init terraunittest \
