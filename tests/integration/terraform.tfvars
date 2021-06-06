@@ -1,2 +1,2 @@
-project_id_test = env.PROJECT_ID
+project_id_test = var.PROJECT_ID
 project_number_test = "bar"
