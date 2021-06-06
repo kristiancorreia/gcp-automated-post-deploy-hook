@@ -1,7 +1,15 @@
 steps:
 
 - name: 'binxio/terratest-runner-gcp'
-  args: ['RUN',  '/bin/sh', './script.sh']
+  entrypoint: 'ash'
+  args:
+  - '-c'
+  - '-eEuo'
+  - 'pipefail'
+  - |
+    go mod init terraunittest \
+    && go mod tidy \
+    && go test -v -timeout 30m
   dir: 'tests/integration'
   env: ['GCLOUD_PROJECT=automated-post-deploy-hook']
 
