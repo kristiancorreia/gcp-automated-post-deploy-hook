@@ -1,7 +1,7 @@
 steps:
 
 - name: 'binxio/terratest-runner-gcp'
-  args: ['integration_test.sh']
+  args: ['../../cloudbuild/integration_test.sh']
   dir: 'tests/integration'
   env: ['GCLOUD_PROJECT=automated-post-deploy-hook']
 
