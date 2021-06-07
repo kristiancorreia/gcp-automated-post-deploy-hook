@@ -1,4 +1,4 @@
-ash -euo pipefail -c
+/bin/ash
 
 go mod init terraunittest
 go mod tidy
