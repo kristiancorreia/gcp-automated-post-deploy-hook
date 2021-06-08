@@ -1,4 +1,4 @@
-ash ../../../project_variables.sh
+source ../../../project_variables.sh
 echo $GCLOUD_PROJECT
 echo $PROJECT_ID
 go mod init terraunittest
