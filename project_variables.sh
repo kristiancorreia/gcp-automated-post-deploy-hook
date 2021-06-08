@@ -1,0 +1,1 @@
+export GCLOUD_PROJECT=automated-post-deploy-hook
