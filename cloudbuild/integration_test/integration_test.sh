@@ -1,4 +1,4 @@
-/bin/ash
+/bin/bash
 
 go mod init terraunittest
 go mod tidy
