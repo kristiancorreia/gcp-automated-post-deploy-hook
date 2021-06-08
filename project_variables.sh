@@ -1,2 +1,2 @@
 export GCLOUD_PROJECT=automated-post-deploy-hook
-export TF_VAR_PROJECT_ID=$GCLOUD_PROJECT
+export TF_VAR_project_id=$GCLOUD_PROJECT
