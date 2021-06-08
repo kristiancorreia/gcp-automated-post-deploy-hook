@@ -1,16 +1,7 @@
 steps:
 
 - name: 'binxio/terratest-runner-gcp'
-  args: ['go', 'mod', 'init', 'terraunittest']
+  args: ['ash', '../../cloudbuild/cycle_unit_test/cycle_unit_test.sh']
   dir: 'tests/unit'
-
-- name: 'binxio/terratest-runner-gcp'
-  args: ['go', 'mod', 'tidy']
-  dir: 'tests/unit'
-
-- name: 'binxio/terratest-runner-gcp'
-  args: ['go', 'test', '-v', './...', '-timeout', '120m', '-p', '1']
-  dir: 'tests/unit'
-  env: ['GCLOUD_PROJECT=automated-post-deploy-hook']
 
 timeout: 7200s
