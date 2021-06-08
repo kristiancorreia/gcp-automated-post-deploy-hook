@@ -3,6 +3,5 @@ steps:
 - name: 'binxio/terratest-runner-gcp'
   args: ['ash', '../../cloudbuild/integration_test/integration_test.sh']
   dir: 'tests/integration'
-  env: ['GCLOUD_PROJECT=automated-post-deploy-hook']
 
 timeout: 1800s
