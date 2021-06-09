@@ -2,7 +2,7 @@ provider "google" {
   project = var.project_id
 }
 
-module "sample-test" {
-  source = "../../../modules/sample"
+module "iam-bonding-test" {
+  source = "../../../modules/iam-bonding"
   project_id = var.project_id
 }
