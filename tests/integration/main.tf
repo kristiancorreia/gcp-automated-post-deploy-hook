@@ -1,5 +1,5 @@
 provider "google" {
-  project = "kc-gke-wp"
+  project = var.project_id
 }
 
 module "full_build" {
