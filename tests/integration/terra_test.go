@@ -21,8 +21,6 @@ func TestTerraformGcpHelloWorldExample(t *testing.T) {
 		EnvVars: map[string]string{
 			"GOOGLE_CLOUD_PROJECT": projectId,
 		},
-
-		VarFiles: []string{"terraform.tfvars"},
 	})
 
 	defer terraform.Destroy(t, terraformOptions)
