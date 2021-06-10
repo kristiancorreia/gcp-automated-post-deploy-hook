@@ -2,6 +2,11 @@ provider "google" {
   project = var.project_id
 }
 
-output "hello_world" {
-  value = "Hello World!"
+resource "google_project_iam_binding" "iam_binding" {
+  project = var.project_id
+  role    = var.role
+
+  members = [
+    var.member
+  ]
 }

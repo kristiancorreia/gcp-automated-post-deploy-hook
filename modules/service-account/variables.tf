@@ -2,10 +2,10 @@ variable "project_id" {
   type = string
 }
 
-variable "role" {
+variable "account_id" {
   type = string
 }
 
-variable "member" {
+variable "name" {
   type = string
 }
