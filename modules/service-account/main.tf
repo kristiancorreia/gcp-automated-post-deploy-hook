@@ -6,7 +6,7 @@ resource "random_id" "db_name_suffix" {
   byte_length = 4
 }
 
-resource "google_service_account" "kc-gke-wp-sa" {
+resource "google_service_account" "service_account" {
   account_id   = "${var.account_id}-${random_id.db_name_suffix.hex}"
   display_name = var.name
 }
