@@ -7,6 +7,6 @@ resource "google_project_iam_binding" "iam_binding" {
   role    = var.role
 
   members = [
-    var.member
+    "serviceAccount:${var.member}"
   ]
 }
