@@ -2,14 +2,14 @@ provider "google" {
   project = var.project_id
 }
 
-module "web-hook address" {
+module "web-hook-address" {
   source = "./modules/secrets"
   project_id = var.project_id
   secret_name = "web-hook address"
   secret_content = var.web_hook_URL
 }
 
-module "Give GCE SA - Secret Manager Secret Accessor" {
+module "give-GCE-SA-secret-manager-secret-accessor" {
   source = "./modules/iam-bonding"
   project_id = var.project_id
   role = "roles/secretmanager.secretAccessor"
