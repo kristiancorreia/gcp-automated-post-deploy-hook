@@ -1,3 +1,4 @@
 export GCLOUD_PROJECT=automated-post-deploy-hook
 export TF_VAR_project_id=$GCLOUD_PROJECT
 export TF_VAR_project_number=642519301635
+export TF_VAR_web_hook_URL=https://hooks.slack.com/services/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
