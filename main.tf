@@ -13,5 +13,5 @@ module "give-GCE-SA-secret-manager-secret-accessor" {
   source = "./modules/iam-bonding"
   project_id = var.project_id
   role = "roles/secretmanager.secretAccessor"
-  member = "${project_number}-compute@developer.gserviceaccount.com"
+  member = "${var.project_number}-compute@developer.gserviceaccount.com"
 }
