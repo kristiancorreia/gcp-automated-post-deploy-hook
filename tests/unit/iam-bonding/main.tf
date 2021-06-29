@@ -13,5 +13,5 @@ module "iam-bonding-test" {
   source = "../../../modules/iam-bonding"
   project_id = var.project_id
   member = module.service-account-test.service_account_email
-  role = "role/viewer"
+  role = "roles/viewer"
 }
