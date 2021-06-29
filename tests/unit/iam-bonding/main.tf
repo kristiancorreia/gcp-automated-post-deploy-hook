@@ -7,6 +7,6 @@ provider "google" {
 module "iam-bonding-test" {
   source = "../../../modules/iam-bonding"
   project_id = var.project_id
-  member = ${var.project}@cloudbuild.gserviceaccount.com
+  member = "${var.project}@cloudbuild.gserviceaccount.com"
   role = "role/viewer"
 }
