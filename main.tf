@@ -15,3 +15,10 @@ module "give-GCE-SA-secret-manager-secret-accessor" {
   role = "roles/secretmanager.secretAccessor"
   member = "${var.project_number}-compute@developer.gserviceaccount.com"
 }
+
+module "give-GCE-SA-storage-object-viewer" {
+  source = "./modules/iam-bonding"
+  project_id = var.project_id
+  role = "roles/storage.objectViewer"
+  member = "${var.project_number}-compute@developer.gserviceaccount.com"
+}
